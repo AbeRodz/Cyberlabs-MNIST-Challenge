@@ -14,15 +14,17 @@ Now, I don't have any experience training a neural network and the code under th
 
 ### Approach
 
- The fast.ai book uses the fastbook library, it makes things such as data preparation easy, but I decided to use Pytorch to download the data, now this was quite a challenge. as the data must be transformed, and in this case filtered in order to get only the digits of interest, this discussion helped with the [filtering](https://discuss.pytorch.org/t/how-to-use-one-class-of-number-in-mnist/26276/19). After organizing and filtering the data, I applied the method that fast.ai uses in the MNIST book, which consists in a linear classifier from scratch, that shows the logic under the hood. Than a simple model was created, using the steps showed on the fast.ai book. 
+ The fast.ai book uses the fastbook library, it makes things such as data preparation easy, but I decided to use Pytorch to download the data, now this was quite a challenge, as the data must be transformed, and in this case it must be filtered in order to get only the digits of interest, this discussion helped with the [filtering](https://discuss.pytorch.org/t/how-to-use-one-class-of-number-in-mnist/26276/19). After organizing and filtering the data, I applied the method that fast.ai uses in the MNIST book, which consists in a linear classifier from scratch, that shows the logic under the hood. Than a simple model was created, using the steps showed on the fast.ai book. 
  
 Now as this was quite challenging for me, I did tried not use the fastbook library, but on the training section I didn't succeded on using Pytorch only, so the fast.ai functions ``Learner`` and ``fit()`` were used. 
 
 #### Result
-Using simple model the accuracy results went quite well.
+Using simple model and a linear the accuracy results went quite well, both models got similar results as shown in this image
+
+![Accucary](https://github.com/AbeRodz/Cyberlabs-MNIST-Challenge/blob/main/image.png "Graph")
 
 
 ## How to use?
 
-This challenge was made on Google Colab, so I recommend using Colab for testing it, just change the github url to **githubtocolab.com** it will lauch the notebook on colab.
+This challenge was made on Google Colab, so I recommend using Colab for testing it, just click on the open on colab button or use this link [colab](https://colab.research.google.com/github/AbeRodz/Cyberlabs-MNIST-Challenge/blob/main/Cyberlabs_Challenge.ipynb). Create a copy, otherwise colab won't let it run.
 
